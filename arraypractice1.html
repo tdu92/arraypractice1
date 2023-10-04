@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arraypractice1</title>
+</head>
+<h1>Luyện tập Mảng 01- Arraypractice1</h1>
+<body>
+<h2>Bài 1: Khởi tạo mảng số nguyên 10 phần tử.
+Tính và hiển thị số số nguyên lơn hơn hoặc bằng 10</h2>
+<script>
+    var mang1=[1,2,3,4,5,6,7,8,9,10];
+    for (let i=0; i<mang1.length; i++) {
+        document.write(mang1[i]+" ")
+        if (mang1[i] == 10) {
+            document.write("Phan tu "+mang1[i]+" lon hon hoac bang 10");
+        }
+    }
+</script>
+
+<h2>Bài 2:Khởi tạo mảng số nguyên 10 phần tử khác nhau.
+Hiển thị giá trị lớn nhất và vị trí của nó</h2>
+<script>
+   var mang2=[1,2,3,4,5,6,7,8,9,10];
+   let max=0;
+   let index=0;
+   for (let i=0; i<mang2.length; i++) {
+       document.write(mang2[i] + " ")
+   }
+   for (let i=0; i<mang2.length; i++) {
+       if (mang2[i] > max) {
+           max = mang2[i];
+           index = i;
+       }
+   }
+   document.write("Phan tu lon nhat: " + max + " vi tri " + index );
+</script>
+
+<h2>Bài 3: Khởi tạo mảng số nguyên
+Hiển thị giá trị max, giá trị trung bình</h2>
+<script>
+    var mang3=[1,2,3,4,5,6,7,8,9,10];
+    let max3=0;
+    let index3=0;
+    let sum=0;
+    let avg=0;
+    for (let i=0; i<mang3.length; i++) {
+        document.write(mang3[i] + " ");
+        sum+=mang3[i];
+        avg=sum/(i+1);
+    }
+    for (let i=0; i<mang3.length; i++) {
+        if (mang3[i] > max3) {
+            max3 = mang3[i];
+            index3 = i;
+        }
+    }
+    document.write("Gia tri trung binh"+ avg+ "<br>");
+    document.write("Phan tu lon nhat: " + max3 + " vi tri " + index3 );
+</script>
+
+<h2>Bài 4: Khởi tạo mảng số nguyên nhập vào.
+Đảo ngược các phần tử trong mảng</h2>
+<script>
+    var mang4=[2,4,6,8,10,11,12,13,14,15];
+    for (let i=0; i<mang4.length; i++) {
+        document.write(mang4[i]+" ");
+    }
+    mang4.reverse();
+    document.write("<br>");
+    for (let i=0; i<mang4.length; i++) {
+        document.write(mang4[i]+" ");
+    }
+</script>
+
+<h2>Bài 5: Đếm số nguyên âm trong một chuỗi</h2>
+<h2>Bài 6: Khởi tạo mảng số nguyên 10 phần tử
+Xét số nguyên V nhập vào có trong mảng không.
+Nếu có in ra "V in the array". Nếu không "V is not in the array"</h2>
+<script>
+    var mang6=[3,5,7,9,11,13,15,16,17,18];
+    let V= +prompt("Nhap vao so nguyen V");
+    for (let i=0; i<mang6.length; i++) {
+        document.write(mang6[i] + " ");
+    }
+    if(V==mang6[0]){
+        document.write(V+"is in the array ");
+    } else {
+        for (let i=1; i<mang6.length; i++) {
+            if(V==mang6[i]){
+                document.write(V+"is in the array ");
+                break;
+            }else {
+                document.write(V + " is not in the array ");
+            }
+        }
+    }
+
+</script>
+<h2>Bài 7:Khởi tạo mảng số nguyên 10 phần tử.
+Xét số nguyên V nhập vào có trong mảng không.
+Nếu có thì xoá V khỏi mảng
+</h2>
+</body>
+</html>
